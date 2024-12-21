@@ -3,11 +3,13 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { errorHandler } from './middleware/error.middleware.js';
 
+import dotenv from 'dotenv'
+dotenv.config({path:'./.env'})
 const app = express();
 
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:process.env.CORS_ORIGIN,
     credentials: true,  
     methods: ['GET', 'POST', 'PUT', 'DELETE'],  
     allowedHeaders: ['Content-Type', 'Authorization', 'AuthorizationRef']  
