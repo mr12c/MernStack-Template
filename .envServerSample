@@ -1,0 +1,8 @@
+    PORT = 9000
+    DATABASE_URI =yourDatabaseUri
+    CORS_ORIGIN =* 
+    ACCESS_TOKEN_SECRET = randomChar
+    ACCESS_TOKEN_EXPIRY =1d
+    REFRESH_TOKEN_SECRET =randomChar
+    REFRESH_TOKEN_EXPIRY = 10d
+ 
